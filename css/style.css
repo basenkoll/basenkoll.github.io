@@ -2,6 +2,9 @@
 padding: 0; 
 margin: 0;
 }
+html{
+    height: 100%;
+}
 body{
     height: 100%;
     background: #f4f4f4;
@@ -34,6 +37,10 @@ li{
 }
 
   /* blocks */
+.full_size_page{
+    height: 100%;
+}
+
 .content{
     float: left;
     margin-bottom: 10px;
@@ -47,7 +54,7 @@ li{
     float: left;
     margin-bottom: 10px;
     background: #ffffff;
-    position: absolute;
+    position: relative;
     height: 100%;
     box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
     box-sizing: border-box;
@@ -56,24 +63,27 @@ li{
 }
 .circle_photo{
     border-radius: 100px;
-    width: 130px;
-    height: 130px;
+    width: 100%;
     margin-top: 15px;
      box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
     border: 1px solid #f06969;
 }
+
 .name{
     line-height: 20px;
+    float: left;
     width: 100%;
     margin-top: 30px;
     font-size: 1.3em;
 }
 .text_grey{
+    float: left;
    line-height: 20px; 
    font-size: 0.9em;
    color: #a3a3a3;
 }
 .text{
+float: left;
    margin-top: 15px;
    line-height: 25px; 
    font-size: 1.1em;
@@ -97,6 +107,7 @@ li{
     height: 100%;
 }
 .social a{
+    
     float: left;
     width: 80%;
     padding: 10px;
@@ -112,51 +123,37 @@ li{
     margin-top: 15px;
 }
 
-@media (min-width: 992px) {
-.preview{
-    cursor: pointer;
+@media (max-width: 990px) {
+ .circle_photo{
+    border-radius: 200px;
+    width: 30%;
     float: left;
-    width: 37.5005%;
-    margin-left: 8.333%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #ffffff;
-    box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
-    box-sizing: border-box;
-    border: solid #efefef 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    }
-}
-@media (max-width: 992px) {
-   .preview{
-    cursor: pointer;
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #ffffff;
-    box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
-    box-sizing: border-box;
-    border: solid #efefef 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    } 
-}
-.preview img{
-    width: 100%;
+    margin-left: 35%; 
     margin-top: 15px;
-    margin-bottom: 15px;
+     box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
+    border: 1px solid #f06969;
 }
-.preview h1{
-    color: #464646;
-    cursor: pointer;
-}
-.preview h1:hover{
-    color: #414141;
+    .full_size_page{
+        height: auto;
+    }
+    .name{
+        text-align: center;
+    }
+    .text_grey{
+        width: 100%;
+        text-align: center;
+    }
+    .social a{
+    float: left;
+    width: 80%;
+    margin-left: 3%;
+    padding: 10px;
+    color: #525554;
     text-decoration: underline;
-    
+    text-align: center;
 }
+}
+
 
 .add_articles{
  padding-top: 15px;
