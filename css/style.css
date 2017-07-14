@@ -26,7 +26,13 @@ h1{
     font-weight: 200;
 }
  
-
+h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 25px;
+}
 p{
     font-size: 17px;
     line-height: 30px;
@@ -48,16 +54,64 @@ li{
     height: 100%;
 }
 
-.content{
+.top_panel{
     float: left;
-    margin-bottom: 10px;
     background:  #1f1f1f;
     box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
     box-sizing: border-box;
     border: solid #efefef 1px;
     padding: 1px;
 }
-
+.content{
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
+    font-family: 'Roboto Mono',sans-serif;
+    box-sizing: border-box;
+    border-left:solid #eaeaea 1px;
+    border-right:solid #eaeaea 1px;
+    background: #ffffff;
+    padding: 20px;
+    
+}
+.content img{
+    width: 100%;
+    height: auto;
+}
+.content hr{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.content h1{
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+}
+.content p{
+    float: left;
+    font-size: 1em;
+    font-weight: 400;
+}
+.tags{
+    cursor: pointer;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: .9em;
+    float: left;
+    box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
+    border-radius: 5px;
+    background: #e6e6e6;
+    padding: 5px;
+}
+.tags:hover{
+    background: #ededed;
+}
 .about_me{
     font-family: 'Roboto Mono',sans-serif;
     float: left;
@@ -161,11 +215,7 @@ li{
     transition: 0.4s all;
     text-decoration: none;
 }
-.content img{
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-}
+
 
 
 
