@@ -87,8 +87,12 @@
 				
     </div>
      <div class="col-md-9 col-xs-12">
-        <div class="content">
-        <h2>My projects</h2>
+       <div class="row">
+        <div id="projects" class="button_content">
+            <h2>My projects<i id="proj" class="fa fa-angle-down" aria-hidden="true"></i></h2>
+        </div>
+        
+        <div id="project_content" class="content">
         <img src="pictures/Neon.JPG" alt="">
         <div class="tags">
             Cinema 4d
@@ -110,7 +114,19 @@ The work was finished in time</p>
         </div>
          <h1>NONE</h1>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque vero saepe veniam nulla libero, necessitatibus.</p>
-        </div>
+        </div> 
+        
+         <div id="price" class="button_content">
+            <h2>Price<i id="pr" class="fa fa-angle-down" aria-hidden="true"></i></h2>
+        </div> 
+        <div id="price_content" class="content">
+         <p>Animation: 8$ for 10s; <br>
+         Model: ~ 10$; <br>
+         Rig: ~ 20$;
+         </p>
+        </div> 
+       </div>
+        
         	
     		
 			
@@ -123,6 +139,23 @@ The work was finished in time</p>
     
   </div>
 
-          
+    <script>
+        
+  $('#projects').click(function(){
+      $('#project_content').slideToggle(200);
+      $('#proj').toggleClass('fa-angle-up');
+      $('#proj').toggleClass('fa-angle-down');
+      
+      
+  }); 
+        
+    $('#price').click(function(){
+      $('#price_content').slideToggle(200);
+      $('#pr').toggleClass('fa-angle-up');
+      $('#pr').toggleClass('fa-angle-down');
+      
+      
+  });  
+    </script>    
   </body>
 </html>

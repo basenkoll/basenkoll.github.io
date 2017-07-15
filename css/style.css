@@ -9,6 +9,9 @@ body{
     height: 100%;
     background: #f4f4f4;
 }
+i{
+    margin-left: 10px;
+}
 hr{
     float: left;
     width: 100%;
@@ -27,7 +30,7 @@ h1{
 }
  
 h2{
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: 300;
     text-align: center;
     margin: 10px;
@@ -63,6 +66,7 @@ li{
     padding: 1px;
 }
 .content{
+    display: none;
     width: 80%;
     margin-left: 10%;
     float: left;
@@ -75,6 +79,23 @@ li{
     background: #ffffff;
     padding: 20px;
     
+}
+.button_content{
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+    box-shadow: 0px 0px 1px rgba(57, 57, 57, 0.05);
+    font-family: 'Roboto Mono',sans-serif;
+    box-sizing: border-box;
+    border-top:solid #eaeaea 1px;
+    border-left:solid #eaeaea 1px;
+    border-right:solid #eaeaea 1px;
+    background: #ffffff;
+    padding: 20px;
+}
+.button_content:hover{
+    background: #ffffff;
 }
 .content img{
     width: 100%;
@@ -255,6 +276,14 @@ li{
     background: linear-gradient(270deg, #7fd1bc, #e5bea0, #d26cd0);
 }
 @media (max-width: 990px) {
+    .content{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .button_content{
+        width: 100%;
+        margin-left: 0%;
+    }
  .circle_photo{
     border-radius: 200px;
     width: 30%;
